@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.t1405031.project_teamb.Main2Activity">
+
+    <Button
+        android:text="他のフォルダに入れる"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/UproadButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/SelectFolderButton" />
+
+    <Button
+        android:text="ホーム画面に戻る"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TakePhotoButton"
+        android:layout_alignRight="@+id/SelectFolderButton"
+        android:layout_alignEnd="@+id/SelectFolderButton"
+        android:id="@+id/ReturnButton" />
+
+    <Button
+        android:text="再撮影"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/TakePhotoButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/UproadButton"
+        android:layout_alignStart="@+id/UproadButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="撮影が完了しました.現在の時刻に当てはまるイベントが見つかりました.このイベントのフォルダに写真を入れますか?"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/UproadButton"
+        android:layout_above="@+id/TakePhotoButton"
+        android:layout_toLeftOf="@+id/SelectFolderButton"
+        android:layout_toStartOf="@+id/SelectFolderButton"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:text="該当イベントを表示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectEventButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/UproadButton"
+        android:layout_alignStart="@+id/UproadButton"
+        android:layout_marginTop="82dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SelectFolderButton"
+        android:layout_marginBottom="38dp"
+        android:id="@+id/textView3"
+        android:layout_alignLeft="@+id/UproadButton"
+        android:layout_alignStart="@+id/UproadButton" />
+
+</RelativeLayout>
