@@ -12,5 +12,6 @@ public class ListViewEvent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
 
+        //リストビュー作成
     }
 }
