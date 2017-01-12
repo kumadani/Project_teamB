@@ -10,15 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.t1405031.project_teamb.MainActivity">
 
-    <Button
-        android:text="ログアウト"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/LogoutButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,4 +44,5 @@
         android:layout_marginRight="50dp"
         android:layout_marginEnd="50dp"
         android:id="@+id/EditButton" />
+
 </RelativeLayout>
