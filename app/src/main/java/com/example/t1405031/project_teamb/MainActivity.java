@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         TakePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); //暗黙的intent(カメラ撮影)
-                //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                //startActivityForResult(intent, RESULT_CAMERA);
-                Intent intent =new Intent(getApplication(),TakePhotoActivity.class);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE); //暗黙的intent(カメラ撮影)
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                startActivityForResult(intent, RESULT_CAMERA);
+                //Intent intent =new Intent(getApplication(),TakePhotoActivity.class);
+                //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                //startActivity(intent);
             }
         });
 
